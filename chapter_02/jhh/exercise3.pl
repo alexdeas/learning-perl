@@ -8,4 +8,4 @@ $value = $radius;
 if ( $radius < 0 ) {
   $value = 0;
 }
-print "The circumferance of a circle with $radius is " . ( 2 * $pi * $value ) . "\n";
+print "The circumference of a circle with $radius is " . ( 2 * $pi * $value ) . "\n";
