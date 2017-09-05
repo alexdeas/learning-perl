@@ -1,4 +1,3 @@
-package Sum;
 use strict;
 use warnings;
 
