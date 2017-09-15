@@ -11,7 +11,6 @@ foreach (sort keys %ENV) {
 }
 
 print "Environment variables:\n";
-$max_len = 0 - $max_len;
 foreach (sort keys %ENV) {
-  printf "%${max_len}s: %s\n", $_, $ENV{$_};
+  printf "%-${max_len}s: %s\n", $_, $ENV{$_};
 }
