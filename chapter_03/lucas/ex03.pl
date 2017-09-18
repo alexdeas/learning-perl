@@ -7,13 +7,16 @@ use utf8;
 
 print "please enter a list of names. terminate line input with ctrl+z and enter: ";
 @names = <STDIN>;
+@sorted  = sort(@names);
 print "\n\n";
-foreach $name (@names) {
+print "names alphabetially ordered, one on each line: \n";
+foreach $name (@sorted) {
   print "$name";
 }
 print "\n\n";
-@nxames = chomp(@names);
-foreach $name (@names) {
+chomp(@sorted);
+
+foreach $name (@sorted) {
   print "$name ";
 }
 print "\n\n";
