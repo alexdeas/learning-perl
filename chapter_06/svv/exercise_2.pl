@@ -14,3 +14,17 @@ say "\nResults:";
 foreach my $person (sort keys %list) {
     say "$person: $list{$person}";
 }
+
+
+
+# $ perl exercise_2.pl
+# fred
+# fred
+# barney
+# fred
+# wilma
+#
+# # Results:
+# barney: 1
+# fred: 3
+# wilma: 1
