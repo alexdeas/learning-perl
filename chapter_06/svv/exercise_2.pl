@@ -3,14 +3,14 @@ use strict;
 use warnings;
 use feature qw(say);
 
-my %family_name;
-$family_name{'fred'} = 'flintstone';
-$family_name{'barney'} = 'rubble';
-$family_name{'wilma'} = 'flintstone';
+my %list;
 
 while (<STDIN>) {
     chomp;
-    my $last_name = $family_name{$_};
-    say defined $last_name ? $last_name : "Who?";
+    $list{$_}++;
 }
 
+say "\nResults:";
+foreach my $person (sort keys %list) {
+    say "$person: $list{$person}";
+}
