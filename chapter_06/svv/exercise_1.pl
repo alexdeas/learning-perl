@@ -14,4 +14,3 @@ while(<STDIN>) {
     my $last_name = $family_name{$_};
     say defined $last_name ? $last_name : "Who?\n";
 }
-
