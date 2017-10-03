@@ -4,7 +4,7 @@ use warnings;
 
 while (<>) {
   chomp;
-  if (/\w+(a)$/) {
+  if (/\w+(a\b)/) {
     print "'$`$&' ends with $1\n";
   }
 }
