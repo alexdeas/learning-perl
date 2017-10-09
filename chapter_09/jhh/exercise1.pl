@@ -12,4 +12,3 @@ while (<>) {
     print "Didn't match\n";
   }
 }
-close $out_fh;
